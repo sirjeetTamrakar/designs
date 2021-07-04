@@ -1,0 +1,67 @@
+.main{
+  position: relative;
+  width: 100%;
+  color: white;
+background:linear-gradient(To left, rgba(0,0,0,.9), rgba(0,0,0,1));  
+height: 100vh;
+  display: grid;
+  grid-template-columns: .8fr 2fr .15fr;
+  margin-top: 5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Satisfy', cursive; */
+  /* font-family: 'Lobster Two', cursive; */
+  /* font-family: 'Cookie', cursive; */
+
+}
+
+.left{
+    width: 100%;
+background:linear-gradient(To left top, rgba(223, 31, 45, .8), rgba(0,0,0,.4));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+
+
+.left>p{
+    border-bottom: 5px solid white;
+    font-size: 1.5rem;
+    width: 60%;
+}
+.image{
+
+  position: relative;
+}
+
+
+.bottom{
+ height: 30vh;
+    position: absolute;
+    bottom: 0;
+    
+display: grid;
+  grid-template-columns: .8fr 2fr .15fr;
+width: 100%;
+}
+
+.text{
+  width: 20%;
+  text-align: center;
+}
+
+.texts{
+  display: flex;
+  justify-content: space-evenly;
+  background:linear-gradient(to right bottom, rgba(223, 31, 45, .8), rgba(177, 19, 19,.2));
+backdrop-filter: blur(.5rem);
+}
+
+
+@media screen and (max-width:800px) {
+    .main{
+        height: 50vh;
+    }
+}

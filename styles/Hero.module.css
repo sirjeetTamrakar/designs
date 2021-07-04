@@ -1,0 +1,82 @@
+.main{
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.image{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.blur{
+  position: absolute;
+    background:linear-gradient(to right bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+    backdrop-filter: blur(1rem);
+    width: 35%;
+    height: 100%;
+    z-index: 5;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;}
+
+.text>b{
+  font-size: 3rem;
+  padding-inline: 4rem;
+}
+
+.text>button{
+    border: 2px solid white;
+    background-color: rgba(0,0,0,.1);
+    color: white;
+    padding: 1rem 1.2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.text>button:focus{
+    outline: none;
+}
+
+.text>button:hover{
+    background-color: rgba(0,0,0,.8);
+}
+
+@media screen and (max-width:800px) {
+  .image{
+    height: 50vh;
+  }
+  .blur{
+    width: 50%;
+  }
+
+  .text>small{
+    font-size: .6rem;
+  }
+
+  .text>b{
+    padding-inline: 1rem;
+    font-size: 2rem;
+  }
+  .text>button{
+    font-size: 1rem;
+    padding: .7rem 1rem;
+    margin-top: 1rem;
+}
+}
+
+@media screen and (max-width:600px) {
+    
+.text>button{
+    font-size: .7rem;
+    padding: .5rem .7rem;
+}
+}
