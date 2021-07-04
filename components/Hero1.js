@@ -14,7 +14,7 @@ const Hero1 = () => {
 						className={styles.img}
 						src='/2.png'
 						height={650}
-					width={650}
+					width={850}
 						alt='asd'
 					/>
 				</div>
